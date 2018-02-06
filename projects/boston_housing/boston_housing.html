@@ -11988,7 +11988,7 @@ Standard deviation of prices: $165171.13154429474
 <p><strong>Answer: </strong>
 <font color="blue">
 1) The value of 7 RM home is much higher than 6 RM home. The home construction cost increases as number of room increases. <br>
-2) The home value that has LSTAT value 15 is much higher compare to the home that has LSTAT value 20. <br>
+2) The home value that has LSTAT value 15 is much higher compare to the home that has LSTAT value 20. Normally, the crime rate is high in the area that has higher LSTAT value. People want to pay more and live in the areas that has lower crime rate.   <br>
 3) Neighborhood that has PTRATIO value 10 has highter home pricess compare PTRATIO value of 15. People want to pay high pricess for school districts that has lower PTRATIO value.   
 </font></p>
 
@@ -12322,7 +12322,8 @@ Think about the pros and cons of adding more training points based on if the tra
 <p><strong>Answer: </strong>
 <font color="blue">
  1) I am choosing Top Right hand side graph. The maximum depths is 3 for the second graph (Top right side) <br>
-2) The training curve slightly reduces from 0.8 to 0.7 as we add more training points. Also, testing score reduces from 0.7 to 0.65 <br>
+2A) The Training score drastrically reduced from data point 0 to 50. The Training score slightly reduced as we add more datapoint between 50 to 200. After that, training score started levelling from datapiont 200. Training score has not changed much from data point 200 to 400.
+    2B) The testing curve starts raising from data point 0 to 200, then slightly goes down at 250 and starts levelling from Data point 300. The testing score has not changed  between datapoints 300 and 400. The testing score is pretty much same starting from data point 300.  <br>
 3) Yes, the model becomes more accurate as we add more training points. It is a beneficial to the model.  
 </font></p>
 
@@ -12479,8 +12480,8 @@ SKLearn (Scikit-learn) library has provided Grid Search Cross Validation class t
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
 <font color="blue">
-Divide massive data into "K" number of subsets.  Assign one subset as a Test data and remaining k-1 subsets as Training data. Execute tests K times by changing Testing data subset each iteration. Make sure that each data subset is categorized as Testing data once during iterations. This techinique is called K-Fold cross validation. <br>
-K-fold cross validation technique ensures that each data point is utilized for Training. This technique prevents eliminating some of the data points in the Training process. </font></p>
+1) Divide massive data into "K" number of subsets.  Assign one subset as a Test data and remaining k-1 subsets as Training data. Execute tests K times by changing Testing data subset each iteration. Make sure that each data subset is categorized as Testing data once during iterations. This techinique is called K-Fold cross validation. This technique prevents eliminating some of the data points in the Training process. Also, this technique ensures that each data point is utilized for Training. <br>
+2) The K-fold Cross Validation technique for Grid Search helps to Train the model with all data points. The optimal Hyper Parameter values can be obtained by executing the Model K times, identify F-Beta values for each iteration and calculate aveage of F-Beta values for each hyper-parameter combination. K-fold technique allows to train all datasets at least k-1 times.  This techniques provides Grid Search to calculate and identify a optimal parameter combnation. </font></p>
 
 </div>
 </div>
@@ -12816,12 +12817,14 @@ Range in prices: $69,044.61
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-<font color="blue">
-    1) The home prices have increased tremendously after 2011 across USA. The data collected in 1978 provides general pricing trends based on number of rooms, school district and poverty area. However, we need to create Housed Model baseed on recent data, perhaps within last few years. <br>
-    2) Yes, we have to consider adding other important features to the Model, like square feet, Pool presence and etc. The price prediction becomes more accurate as we add additional features to the Model. <br>
-    3) The prediction model can be improvied by introducing K-fold Cross Validation technique and adding additional features. <br>
+<font color="blue">  
+    1) The home prices have increased tremendously after 2010 across USA. The data collected in 1978 provides general pricing trends based on number of rooms, school district and poverty area. However, we need to create Housing Model baseed on recent data, perhaps within last few years. The 1978 housing data may not be suitable for predicting the current home values. <br> 
+    1b) The home prices increase in urban areas way beyond the inflation rate. The house prices increase percentage is much higher compare to Inflation. Therefore, Inflation is not a suitable parmater to predict home prices. <br>
+    2) No, three features present in the data model are not sufficient to predict home prices. We have to consider adding other important features to the Model, like square feet, Floor type, Roof age, Kitchen upgrades, bathroom upgrades,Pool presence and etc. The price prediction becomes more accurate as we add additional features to the Model. <br>  
+    3) No, we have seen drastic price variation from \$351K to \$420K with 10 iterations. The difference between minimum price and maximum price is 70K Dollars. The prediction model can be improved by introducing K-fold Cross Validation technique and adding additional features. <br>   
     4) No, the prices in the Rural area are not same as in urban area. Therefore, Boston urban area datasets are not applicable to rural city.<br>
-    5) The home price is depends on various factors, number of rooms, square feet, school districts, zip code and other features. We need home characterstics and prices within few miles of radius instead of just concentraing on neighborhood
+    5) The home price is depends on various factors, number of rooms, square feet, school districts, roof age, zip code and other features. We need home characterstics and prices within few miles of radius instead of just concentraing on neighborhood.<p>
+  <b>Conclusion:</b> The constructed model should not be used As Is. Instead, add additional features to the model and also Train the model with recent data, perhaps within 2-3 years of sales history. <br>
 </font></p>
 
 </div>
