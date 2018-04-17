@@ -12199,13 +12199,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> <font color='blue'></p>
-<ul>
-<li>Frist sample consists of items Fresh, milk, Grocery, and Detergent values more than average . Grocery shops requires items to sell it to other customers. The first sample data indicates it could be a grocery shop<br></li>
-<li>The second data sample consists of higher purchases of Fresh, Milk, Grocery and Delicatessen. It indicates some sort of food stalls sells a lot of sandwiches and coffee. The sample could belong to a food stall at either Hotels or offices. <br></li>
-<li>The Third data sample contains high fresh, milk, Grocery and Delicatessen values. This data could belong to a Restaurant which sells sandwiches and coffee. Restaurants normally need Fresh Vegetables, Grocery and Deli products. Restaurants also require Detergent/Paper products. <br>
-  &lt;/font&gt;</li>
-</ul>
+<p><strong>Answer:</strong> 
+<font color='blue'>
+    <b>Frist sample </b> consists of items Fresh, milk, Grocery, and Detergent values more than average . Grocery shops requires items to sell it to other customers. The first sample data indicates it could be a grocery shop<br>
+<b>The second data sample</b> consists of higher purchases of Fresh, Milk, Grocery and Delicatessen. It indicates some sort of food stalls sells a lot of sandwiches and coffee. The sample could belong to a food stall at either Hotels or offices. <br>
+<b>The Third data sample</b> contains high fresh, milk, Grocery and Delicatessen values. This data could belong to a Restaurant which sells sandwiches and coffee. Restaurants normally need Fresh Vegetables, Grocery and Deli products. Restaurants also require Detergent/Paper products. 
+ </font></p>
 
 </div>
 </div>
@@ -12539,14 +12538,11 @@ The prediction score is negative for Delicatessen, Frozen and Fresh. The negativ
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-<font color='blue'></p>
-
-<pre><code>- &lt;b&gt; Scatter Matrix Analysis:&lt;/b&gt; The correlation diagram indicates that Grocery and Detergent are correlated. Customers purchased Grocery in higher amount have purchased higher amount of Detergent.  &lt;br&gt;
-- Grocery and Milk have shown some degree of correlation. Also, Milk and Detergent have shown some degree of correlation. It means, customers purchased Milk have also purchased Grocery and Detergent. &lt;br&gt;
-- &lt;b&gt;Relevance: &lt;/b&gt; I have selected Grocery as a feature to predict. The Grocery prediction score is 0.69. The diagram also shows that Milk and Detergent paper are correlated with Grocery. It means, Grocery is NOT a Relevant feature. In contrast, Delicatessen is a Relevant feature because Delicatessen not correlated  with other features. Delicatessen feature R^2 score is negative and we need to keep Delicattessen data in the model.    &lt;br&gt;
-- &lt;b&gt; Data Distribution:&lt;/b&gt; Grocery feature's most of data points are less than 20,000. However, there are few outliers in 80,000 range. The Frozen's most of data points are between 0 and 10,000. However, there are few outliers in 100,000 range. Grocery feature mean value is 7957 and std is 9503. The standard deviation is much higher. Grocery data is not normally distributed. &lt;br&gt;  
-
-</code></pre>
+<font color='blue'>
+    <b> Scatter Matrix Analysis:</b> The correlation diagram indicates that Grocery and Detergent are correlated. Customers purchased Grocery in higher amount have purchased higher amount of Detergent.  <br>
+    Grocery and Milk have shown some degree of correlation. Also, Milk and Detergent have shown some degree of correlation. It means, customers purchased Milk have also purchased Grocery and Detergent. <br>
+    <b>Relevance: </b> I have selected Grocery as a feature to predict. The Grocery prediction score is 0.69. The diagram also shows that Milk and Detergent paper are correlated with Grocery. It means, Grocery is NOT a Relevant feature. In contrast, Delicatessen is a Relevant feature because Delicatessen not correlated  with other features. Delicatessen feature R^2 score is negative and we need to keep Delicattessen data in the model.    <br>
+    <b> Data Distribution:</b> Grocery feature's most of data points are less than 20,000. However, there are few outliers in 80,000 range. The Frozen's most of data points are between 0 and 10,000. However, there are few outliers in 100,000 range. Grocery feature mean value is 7957 and std is 9503. The standard deviation is much higher. Grocery data is not normally distributed.</p>
 <p>&lt;/font&gt;</p>
 
 </div>
@@ -13606,9 +13602,9 @@ Once you have performed this implementation, the dataset will be stored in the v
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <Font color='blue'>
-    <b> - Outlier More than one featuru: </b>: Yes, I have noticed few outlier data point rows belong to more than one feature. For example, Record ID 65 is listed as Outlier for both Frozen and Delicatessen. Also, Record ID 154 is listed as Outlier for Milk, Grocery and Delicatessen. <br>
-    <b>- Yes, </b> the outlier appear in multiple features should be removed from dataset because these outliers skew the datamodel. <br>
-    <b> - The outlier list </b> contains 21 data points only which represents less than fiver percent of datasets. If we remove few outliers from the list, the model gets impacted with high variance. 
+    <b> Outlier More than one featuru: </b>: Yes, I have noticed few outlier data point rows belong to more than one feature. For example, Record ID 65 is listed as Outlier for both Frozen and Delicatessen. Also, Record ID 154 is listed as Outlier for Milk, Grocery and Delicatessen. <br>
+    <b>Yes, </b> the outlier appear in multiple features should be removed from dataset because these outliers skew the datamodel. <br>
+    <b>  The outlier list </b> contains 21 data points only which represents less than fiver percent of datasets. If we remove few outliers from the list, the model gets impacted with high variance. 
 </Font>
 </div>
 </div>
@@ -13712,18 +13708,12 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong>
-<font color='blue'></p>
-
-<pre><code> - &lt;b&gt; First Two Components Variance: &lt;/b&gt; The first principal component variance is 0.4613 and second principal component is 0.2543. The total variance of first and second components together is 0.7156. &lt;br&gt;
-- &lt;b&gt; First Four Principal Components Variance: &lt;/b&gt; The total variance for the first four components is 0.9264 (0.4613 + 0.2543 + 0.1179 + 0.0929) &lt;br&gt;
-- &lt;b&gt; Analysis: &lt;/b&gt;  The feature weight's sign (positive or negative) does not matter in PCA variance analysis. The highest magnitude either positive or negative is a key to identify important features. The important features in the first principal component are Detergent paper, Milk and Grocery.&lt;br&gt;
-
-
-
-</code></pre>
-<p>&lt;/font&gt;</p>
-
+<p><strong>Answer:</strong></p>
+<Font color='blue'>
+     <b> First Two Components Variance: </b> The first principal component variance is 0.4613 and second principal component is 0.2543. The total variance of first and second components together is 0.7156. <br>
+   <b> First Four Principal Components Variance: </b> The total variance for the first four components is 0.9264 (0.4613 + 0.2543 + 0.1179 + 0.0929) <br>
+     <b> Analysis: </b>  The feature weight's sign (positive or negative) does not matter in PCA variance analysis. The highest magnitude either positive or negative is a key to identify important features. The important features in the first principal component are Detergent paper, Milk and Grocery.            
+</Font>
 </div>
 </div>
 </div>
@@ -14065,14 +14055,14 @@ Once you have performed this implementation, the dataset will be stored in the v
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
 <font color='blue'>
-  <b>- K-Means Clustering Algorithm:</b> The advantages of K-Means clustering are as follows: <br>
+  <b> K-Means Clustering Algorithm:</b> The advantages of K-Means clustering are as follows: <br>
      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Algorithm execution time is low, provides results quickly. <br>
      &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Implementation is simple and easy to understand results<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - A data point can move to another cluster when a centroid is repositioned. <br> <br>
-    <b>- Gaussian Mixture Model (GMM) Algorithm:</b> The advantages of Gaussian Mixture Model (GMM) are as follows:<br>                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - It allows soft clustering, allows multi-membership, associating data point to multiple clusters. <br>
+    <b> Gaussian Mixture Model (GMM) Algorithm:</b> The advantages of Gaussian Mixture Model (GMM) are as follows:<br>                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - It allows soft clustering, allows multi-membership, associating data point to multiple clusters. <br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - GMM model does not have any restriction on datasets shape. Model allows data in various shapes like elliptical. GMM is a flexible model  <br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - GMM supports complex data models. <br> <br>
-   <b> - Which Algorithm?</b> The above bi-plot diagram shows that the data points are spread across horizontally. Also, we want to assign a data point to a single cluster. In my option, K-Means algorithm is more suitable for wholesale customer data. 
+   <b>  Which Algorithm?</b> The above bi-plot diagram shows that the data points are spread across horizontally. Also, we want to assign a data point to a single cluster. In my option, K-Means algorithm is more suitable for wholesale customer data. 
 </font></p>
 
 </div>
@@ -14164,20 +14154,16 @@ Once you have performed this implementation, the dataset will be stored in the v
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-<font color='blue'></p>
-
-<pre><code>- I have calculated Silhoutte score for various number of clusters.  Here are the Silhoutte Score details: &lt;br&gt;
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;b&gt;Number of clusters=2, Silhoutte Score = 0.4377&lt;/b&gt;&lt;br&gt;
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of clusters=3, Silhoutte score=  0.3960&lt;br&gt;
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of clusters=4, Silhoutte Score = 0.3331&lt;br&gt;
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of cliuters=5  Silhoutte Score = 0.36088&lt;br&gt;
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of clusters=6, Silhoutte Score = 0.3629&lt;br&gt;
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of clusters=8, Silhoutte score = 0.3693&lt;br&gt;
-- It seems, the highest Silhoutte score is returned for cluster count 2 . The best Silhoutte score can be achieved with TWO clusters. 
-
-
-</code></pre>
-<p>&lt;/font&gt;</p>
+<font color='blue'>
+     I have calculated Silhoutte score for various number of clusters.  Here are the Silhoutte Score details: <br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<b>Number of clusters=2, Silhoutte Score = 0.4377</b><br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of clusters=3, Silhoutte score=  0.3960<br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of clusters=4, Silhoutte Score = 0.3331<br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of cliuters=5  Silhoutte Score = 0.36088<br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of clusters=6, Silhoutte Score = 0.3629<br>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Number of clusters=8, Silhoutte score = 0.3693<br>
+    It seems, the highest Silhoutte score is returned for cluster count 2 . The best Silhoutte score can be achieved with TWO clusters.
+</font></p>
 
 </div>
 </div>
@@ -14364,12 +14350,9 @@ Once you have performed this implementation, the dataset will be stored in the v
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-<font color='blue'></p>
-
-<pre><code>- &lt;b&gt;Segment 0 Data Analysis:&lt;/b&gt; Fresh feature value is 3,897 which is less than the original dataset mean(12,000). Milk value is 7,882 which is more than dataset mean (5,796). Grocery value is 12,058 which is more than mean(7,951). Frozen value is 909 which is less than dataset mean (3071). Detergent value is 4,594 which is more than dataset mean (2881) and Delicatessen value is 1,079 which is less than 1,524. It means, Milk, Grocery and Detergent values are more than dataset mean and remaining three feature values are less than mean value.  I think, Segment 0 could belong to Ice Cream shop or coffee shop.   &lt;br&gt;
-- &lt;b&gt;Segment 1 Data Analysis :&lt;/b&gt; Fresh feature value is 9,390 which is less than dataset mean(12,000). Milk value is 1,957 which is less than dataset mean (5,796). Grocery value is 2,522 which is less than mean(7,951). Frozen value is 2,242 which is less than dataset mean (3071). Detergent value is 307 which is less than dataset mean (2881) and Delicatessen value is 736 which is less than 1,524. It means, all feature values in this segment are less than the original dataset mean. I think, Segment 1 could belong to Grocery shop.    &lt;br&gt;&lt;br&gt;
-
-</code></pre>
+<font color='blue'>
+    <b>Segment 0 Data Analysis:</b> Fresh feature value is 3,897 which is less than the original dataset mean(12,000). Milk value is 7,882 which is more than dataset mean (5,796). Grocery value is 12,058 which is more than mean(7,951). Frozen value is 909 which is less than dataset mean (3071). Detergent value is 4,594 which is more than dataset mean (2881) and Delicatessen value is 1,079 which is less than 1,524. It means, Milk, Grocery and Detergent values are more than dataset mean and remaining three feature values are less than mean value.  I think, Segment 0 could belong to Ice Cream shop or coffee shop.   <br>
+    <b>Segment 1 Data Analysis :</b> Fresh feature value is 9,390 which is less than dataset mean(12,000). Milk value is 1,957 which is less than dataset mean (5,796). Grocery value is 2,522 which is less than mean(7,951). Frozen value is 2,242 which is less than dataset mean (3071). Detergent value is 307 which is less than dataset mean (2881) and Delicatessen value is 736 which is less than 1,524. It means, all feature values in this segment are less than the original dataset mean. I think, Segment 1 could belong to Grocery shop.    <br><br></p>
 <p><b>Feature Mean values from the original dataset</b> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fresh
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Milk
@@ -14377,7 +14360,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frozen
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Detergents_Paper  &nbsp;&nbsp;&nbsp;&nbsp;Delicatessen <br>
 <b>mean</b> 12000.2977&nbsp;&nbsp;  5796.2659   &nbsp;&nbsp;&nbsp;7951.2772  &nbsp;&nbsp;&nbsp;3071.93&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2881.4931
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1524.8704<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1524.8704
 &lt;/font&gt;</p>
 
 </div>
@@ -14507,17 +14490,15 @@ Sample point 2 predicted to be in Cluster 1
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
 <font color='blue'>
-     <b>- Unsupervised PCA: </b>  we could potentially use above program to determine which segment(cluster) new customer belongs to. We have already created PCA object with "reduced data". We could use the same object to classify a cluster for new customers. Here are the steps I would executes to predict a customer segment for new customers:<br>
+     <b>Unsupervised PCA: </b>  we could potentially use above program to determine which segment(cluster) new customer belongs to. We have already created PCA object with "reduced data". We could use the same object to classify a cluster for new customers. Here are the steps I would executes to predict a customer segment for new customers:<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> - New Customer Data:</b> Store new customer data in another csv datafile. Read the new datafile and store in a variable. (new_sample) <br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>- Data Scaling: </b>The new customers provided purchasing objects for each feature. The data needs to be scaled using Logarithmic (np.log) formula. This will basically convert new customer values into a more reasonable data range. Store the converted value into new_log_sample. <br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>- PCA Data transformation:</b> Reuse PCA object from above program and apply PCA transformation to new log sample variable (pca_new_sample = pca.transform(new_log_sample)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>- Review New Data Dimensions:</b> Identify Dimension values for each new customer dataset. Print the values of pca new sample to view Dimension attributes of new PCA sample. <br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> - Execute K-means Clustering:</b> execute K-means clustering on PCA Dimensions, same as in above project. <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> - Identify Cluster: </b>Execute predict function to identify a customer segment (new_sample_preds = clusterer.predict(pca_new_samples)<br><br></p>
-
-<pre><code>- &lt;b&gt; Supervised Model: &lt;/b&gt; Yes, we could also use the Supervised Model using original customer data. We already know which Segment/Cluster each customer belongs to. We could use "Customer Segment" as a target variable and possible  target values are either Segment 0 or Segment 1. I think, this model is time consuming to tune the data and predict customer segment. 
-</code></pre>
-<p>&lt;/font&gt;</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> - Identify Cluster: </b>Execute predict function to identify a customer segment (new_sample_preds = clusterer.predict(pca_new_samples)<br><br>
+   <b> Supervised Model: </b> Yes, we could also use the Supervised Model using original customer data. We already know which Segment/Cluster each customer belongs to. We could use "Customer Segment" as a target variable and possible  target values are either Segment 0 or Segment 1. I think, this model is time consuming to tune the data and predict customer segment. 
+</font></p>
 
 </div>
 </div>
@@ -14586,15 +14567,10 @@ Sample point 2 predicted to be in Cluster 1
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-<font color='blue'></p>
-
-<pre><code>- &lt;b&gt;The customer segment (cluster) &lt;/b&gt; prediction with Channel is a pretty close to the prediction without channel. The number of customer segments with Channel is two which is a same number without channel. The clustering algorithm is able to identify same number of customer segments either with the channel or without the channel. &lt;br&gt;
-- I am seeing some data points belong to Hotel/Restaurant/cafe (Green color) are included in the Retailer segment. Also, noticing few data points belong to Retailer are included in the Hotel/Restaurant/Cafe segment. The number of cross segment errors are much lower compare to entire dataset count. We can't make a blanket statement that entire customer segment belong to Retailers or Hotel/Restaurants. &lt;br&gt;
-- &lt;b&gt; Yes, &lt;/b&gt; I think the customer segment classification with Channel is consistent with previous customer segments. The number of data point mismatches are low compare to entire dataset count.  
-
-
-</code></pre>
-<p>&lt;/font&gt;</p>
+<font color='blue'>
+     <b>The customer segment (cluster) </b> prediction with Channel is a pretty close to the prediction without channel. The number of customer segments with Channel is two which is a same number without channel. The clustering algorithm is able to identify same number of customer segments either with the channel or without the channel. <br>
+     I am seeing some data points belong to Hotel/Restaurant/cafe (Green color) are included in the Retailer segment. Also, noticing few data points belong to Retailer are included in the Hotel/Restaurant/Cafe segment. The number of cross segment errors are much lower compare to entire dataset count. We can't make a blanket statement that entire customer segment belong to Retailers or Hotel/Restaurants. <br>
+   <b> Yes, </b> I think the customer segment classification with Channel is consistent with previous customer segments. The number of data point mismatches are low compare to entire dataset count.  </font></p>
 
 </div>
 </div>
